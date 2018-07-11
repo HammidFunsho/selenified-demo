@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 1.332 s <<< FAILURE! - in TestSuite
+sampleServicesAddressTest(sample.ServicesSampleTestIT)  Time elapsed: 0.173 s  <<< FAILURE!
+java.lang.AssertionError: Detailed results found at: sample_ServicesSampleTestIT_sampleServicesAddressTestNONE.html expected:<0 errors> but was:<1 errors>
+	at sample.ServicesSampleTestIT.sampleServicesAddressTest(ServicesSampleTestIT.java:53)
+
+sampleResponseCodePostsTest(sample.SampleServicesPost)  Time elapsed: 0.458 s  <<< FAILURE!
+java.lang.AssertionError: Detailed results found at: sample_SampleServicesPost_sampleResponseCodePostsTestNONE.html expected:<0 errors> but was:<1 errors>
+	at sample.SampleServicesPost.sampleResponseCodePostsTest(SampleServicesPost.java:49)
+

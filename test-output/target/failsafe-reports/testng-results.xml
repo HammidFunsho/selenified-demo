@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+    <line>
+      <![CDATA[SUCCESS | FIREFOX | <a target='_blank' href='Demo Selenium Suite/sample_SampleTests_sampleTestFIREFOX.html'>sample_SampleTests_sampleTest</a> | 0 seconds]]>
+    </line>
+    <line>
+      <![CDATA[SUCCESS | FIREFOX | <a target='_blank' href='Demo Selenium Suite/sample_SampleTests_sampleTestWDataProviderWithOptionPerlFIREFOX.html'>sample_SampleTests_sampleTestWDataProviderWithOptionPerl</a> | 54 seconds]]>
+    </line>
+    <line>
+      <![CDATA[SUCCESS | FIREFOX | <a target='_blank' href='Demo Selenium Suite/sample_SampleTests_sampleTestWDataProviderWithOptionPythonFIREFOX.html'>sample_SampleTests_sampleTestWDataProviderWithOptionPython</a> | 58 seconds]]>
+    </line>
+    <line>
+      <![CDATA[SUCCESS | FIREFOX | <a target='_blank' href='Demo Selenium Suite/sample_SampleTests_sampleTestWDataProviderWithOptionDuckFIREFOX.html'>sample_SampleTests_sampleTestWDataProviderWithOptionDuck</a> | 56 seconds]]>
+    </line>
+    <line>
+      <![CDATA[SUCCESS | FIREFOX | <a target='_blank' href='Demo Selenium Suite/sample_SampleTests_sampleTestWDataProviderWithOptionBashFIREFOX.html'>sample_SampleTests_sampleTestWDataProviderWithOptionBash</a> | 72 seconds]]>
+    </line>
+  </reporter-output>
+  <suite name="Demo Selenium Suite" duration-ms="88637" started-at="2018-05-04T03:21:22Z" finished-at="2018-05-04T03:22:50Z">
+    <groups>
+      <group name="search">
+        <method signature="SampleTests.sampleTestWDataProvider(java.lang.String)[pri:0, instance:sample.SampleTestsIT@1810399e]" name="sampleTestWDataProvider" class="sample.SampleTestsIT"/>
+      </group> <!-- search -->
+      <group name="sample">
+        <method signature="SampleTests.sampleTest()[pri:0, instance:sample.SampleTestsIT@1810399e]" name="sampleTest" class="sample.SampleTestsIT"/>
+      </group> <!-- sample -->
+    </groups>
+    <test name="Demo Selenium Tests" duration-ms="88637" started-at="2018-05-04T03:21:22Z" finished-at="2018-05-04T03:22:50Z">
+      <class name="sample.SampleTestsIT">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:sample.SampleTestsIT@1810399e]" name="beforeSuite" is-config="true" duration-ms="30" started-at="2018-05-03T23:21:22Z" finished-at="2018-05-03T23:21:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeClass(org.testng.ITestContext)[pri:0, instance:sample.SampleTestsIT@1810399e]" name="beforeClass" is-config="true" duration-ms="1" started-at="2018-05-03T23:21:22Z" finished-at="2018-05-03T23:21:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@69ea3742]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="startTest([Ljava.lang.Object;, java.lang.reflect.Method, org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:sample.SampleTestsIT@1810399e]" name="startTest" is-config="true" duration-ms="6690" started-at="2018-05-03T23:21:22Z" finished-at="2018-05-03T23:21:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@2ac273d3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void sample.SampleTestsIT.sampleTest()]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@69ea3742]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name=sampleTest status=SUCCESS method=SampleTests.sampleTest()[pri:0, instance:sample.SampleTestsIT@1810399e] output=SUCCESS | FIREFOX | <a target='_blank' href='Demo Selenium Suite/sample_SampleTests_sampleTestFIREFOX.html'>sample_SampleTests_sampleTest</a> | 0 seconds]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="sampleTest()[pri:0, instance:sample.SampleTestsIT@1810399e]" name="sampleTest" duration-ms="443" started-at="2018-05-03T23:21:28Z" description="A sample selenium test to check a title" finished-at="2018-05-03T23:21:29Z">
+          <reporter-output>
+            <line>
+              <![CDATA[SUCCESS | FIREFOX | <a target='_blank' href='Demo Selenium Suite/sample_SampleTests_sampleTestFIREFOX.html'>sample_SampleTests_sampleTest</a> | 0 seconds]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- sampleTest -->
+        <test-method status="PASS" signature="endTest([Ljava.lang.Object;, java.lang.reflect.Method, org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:sample.SampleTestsIT@1810399e]" name="endTest" is-config="true" duration-ms="555" started-at="2018-05-03T23:21:29Z" finished-at="2018-05-03T23:21:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@2ac273d3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void sample.SampleTestsIT.sampleTest()]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@69ea3742]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name=sampleTest status=SUCCESS method=SampleTests.sampleTest()[pri:0, instance:sample.SampleTestsIT@1810399e] output=SUCCESS | FIREFOX | <a target='_blank' href='Demo Selenium Suite/sample_SampleTests_sampleTestFIREFOX.html'>sample_SampleTests_sampleTest</a> | 0 seconds]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method status="PASS" signature="startTest([Ljava.lang.Object;, java.lang.reflect.Method, org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:sample.SampleTestsIT@1810399e]" name="startTest" is-config="true" duration-ms="15622" started-at="2018-05-03T23:21:29Z" finished-at="2018-05-03T23:21:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@3159c4b8]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void sample.SampleTestsIT.sampleTestWDataProvider(java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@69ea3742]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name=sampleTestWDataProvider status=SUCCESS method=SampleTests.sampleTestWDataProvider(java.lang.String)[pri:0, instance:sample.SampleTestsIT@1810399e] output=SUCCESS | FIREFOX | <a target='_blank' href='Demo Selenium Suite/sample_SampleTests_sampleTestWDataProviderWithOptionPerlFIREFOX.html'>sample_SampleTests_sampleTestWDataProviderWithOptionPerl</a> | 54 seconds]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="startTest([Ljava.lang.Object;, java.lang.reflect.Method, org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:sample.SampleTestsIT@1810399e]" name="startTest" is-config="true" duration-ms="7421" started-at="2018-05-03T23:21:29Z" finished-at="2018-05-03T23:21:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@4b952a2d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void sample.SampleTestsIT.sampleTestWDataProvider(java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@69ea3742]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name=sampleTestWDataProvider status=SUCCESS method=SampleTests.sampleTestWDataProvider(java.lang.String)[pri:0, instance:sample.SampleTestsIT@1810399e] output=SUCCESS | FIREFOX | <a target='_blank' href='Demo Selenium Suite/sample_SampleTests_sampleTestWDataProviderWithOptionBashFIREFOX.html'>sample_SampleTests_sampleTestWDataProviderWithOptionBash</a> | 72 seconds]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="startTest([Ljava.lang.Object;, java.lang.reflect.Method, org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:sample.SampleTestsIT@1810399e]" name="startTest" is-config="true" duration-ms="12178" started-at="2018-05-03T23:21:29Z" finished-at="2018-05-03T23:21:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@4bec1f0c]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void sample.SampleTestsIT.sampleTestWDataProvider(java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@69ea3742]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name=sampleTestWDataProvider status=SUCCESS method=SampleTests.sampleTestWDataProvider(java.lang.String)[pri:0, instance:sample.SampleTestsIT@1810399e] output=SUCCESS | FIREFOX | <a target='_blank' href='Demo Selenium Suite/sample_SampleTests_sampleTestWDataProviderWithOptionPythonFIREFOX.html'>sample_SampleTests_sampleTestWDataProviderWithOptionPython</a> | 58 seconds]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="startTest([Ljava.lang.Object;, java.lang.reflect.Method, org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:sample.SampleTestsIT@1810399e]" name="startTest" is-config="true" duration-ms="15783" started-at="2018-05-03T23:21:29Z" finished-at="2018-05-03T23:21:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@73846619]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void sample.SampleTestsIT.sampleTestWDataProvider(java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@69ea3742]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name=sampleTestWDataProvider status=SUCCESS method=SampleTests.sampleTestWDataProvider(java.lang.String)[pri:0, instance:sample.SampleTestsIT@1810399e] output=SUCCESS | FIREFOX | <a target='_blank' href='Demo Selenium Suite/sample_SampleTests_sampleTestWDataProviderWithOptionDuckFIREFOX.html'>sample_SampleTests_sampleTestWDataProviderWithOptionDuck</a> | 56 seconds]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="sampleTestWDataProvider(java.lang.String)[pri:0, instance:sample.SampleTestsIT@1810399e]" name="sampleTestWDataProvider" duration-ms="72721" started-at="2018-05-03T23:21:37Z" description="A sample selenium test using a data provider to perform searches" data-provider="google search terms" finished-at="2018-05-03T23:22:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[bash]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[SUCCESS | FIREFOX | <a target='_blank' href='Demo Selenium Suite/sample_SampleTests_sampleTestWDataProviderWithOptionBashFIREFOX.html'>sample_SampleTests_sampleTestWDataProviderWithOptionBash</a> | 72 seconds]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- sampleTestWDataProvider -->
+        <test-method status="PASS" signature="sampleTestWDataProvider(java.lang.String)[pri:0, instance:sample.SampleTestsIT@1810399e]" name="sampleTestWDataProvider" duration-ms="58473" started-at="2018-05-03T23:21:42Z" description="A sample selenium test using a data provider to perform searches" data-provider="google search terms" finished-at="2018-05-03T23:22:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[python]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[SUCCESS | FIREFOX | <a target='_blank' href='Demo Selenium Suite/sample_SampleTests_sampleTestWDataProviderWithOptionPythonFIREFOX.html'>sample_SampleTests_sampleTestWDataProviderWithOptionPython</a> | 58 seconds]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- sampleTestWDataProvider -->
+        <test-method status="PASS" signature="sampleTestWDataProvider(java.lang.String)[pri:0, instance:sample.SampleTestsIT@1810399e]" name="sampleTestWDataProvider" duration-ms="54338" started-at="2018-05-03T23:21:45Z" description="A sample selenium test using a data provider to perform searches" data-provider="google search terms" finished-at="2018-05-03T23:22:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[perl]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[SUCCESS | FIREFOX | <a target='_blank' href='Demo Selenium Suite/sample_SampleTests_sampleTestWDataProviderWithOptionPerlFIREFOX.html'>sample_SampleTests_sampleTestWDataProviderWithOptionPerl</a> | 54 seconds]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- sampleTestWDataProvider -->
+        <test-method status="PASS" signature="sampleTestWDataProvider(java.lang.String)[pri:0, instance:sample.SampleTestsIT@1810399e]" name="sampleTestWDataProvider" duration-ms="56449" started-at="2018-05-03T23:21:45Z" description="A sample selenium test using a data provider to perform searches" data-provider="google search terms" finished-at="2018-05-03T23:22:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[duck]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[SUCCESS | FIREFOX | <a target='_blank' href='Demo Selenium Suite/sample_SampleTests_sampleTestWDataProviderWithOptionDuckFIREFOX.html'>sample_SampleTests_sampleTestWDataProviderWithOptionDuck</a> | 56 seconds]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- sampleTestWDataProvider -->
+        <test-method status="PASS" signature="endTest([Ljava.lang.Object;, java.lang.reflect.Method, org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:sample.SampleTestsIT@1810399e]" name="endTest" is-config="true" duration-ms="6260" started-at="2018-05-03T23:22:39Z" finished-at="2018-05-03T23:22:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@3159c4b8]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void sample.SampleTestsIT.sampleTestWDataProvider(java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@69ea3742]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name=sampleTestWDataProvider status=SUCCESS method=SampleTests.sampleTestWDataProvider(java.lang.String)[pri:0, instance:sample.SampleTestsIT@1810399e] output=SUCCESS | FIREFOX | <a target='_blank' href='Demo Selenium Suite/sample_SampleTests_sampleTestWDataProviderWithOptionPerlFIREFOX.html'>sample_SampleTests_sampleTestWDataProviderWithOptionPerl</a> | 54 seconds]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method status="PASS" signature="endTest([Ljava.lang.Object;, java.lang.reflect.Method, org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:sample.SampleTestsIT@1810399e]" name="endTest" is-config="true" duration-ms="5818" started-at="2018-05-03T23:22:40Z" finished-at="2018-05-03T23:22:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@4bec1f0c]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void sample.SampleTestsIT.sampleTestWDataProvider(java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@69ea3742]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name=sampleTestWDataProvider status=SUCCESS method=SampleTests.sampleTestWDataProvider(java.lang.String)[pri:0, instance:sample.SampleTestsIT@1810399e] output=SUCCESS | FIREFOX | <a target='_blank' href='Demo Selenium Suite/sample_SampleTests_sampleTestWDataProviderWithOptionPythonFIREFOX.html'>sample_SampleTests_sampleTestWDataProviderWithOptionPython</a> | 58 seconds]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method status="PASS" signature="endTest([Ljava.lang.Object;, java.lang.reflect.Method, org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:sample.SampleTestsIT@1810399e]" name="endTest" is-config="true" duration-ms="4379" started-at="2018-05-03T23:22:42Z" finished-at="2018-05-03T23:22:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@73846619]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void sample.SampleTestsIT.sampleTestWDataProvider(java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@69ea3742]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name=sampleTestWDataProvider status=SUCCESS method=SampleTests.sampleTestWDataProvider(java.lang.String)[pri:0, instance:sample.SampleTestsIT@1810399e] output=SUCCESS | FIREFOX | <a target='_blank' href='Demo Selenium Suite/sample_SampleTests_sampleTestWDataProviderWithOptionDuckFIREFOX.html'>sample_SampleTests_sampleTestWDataProviderWithOptionDuck</a> | 56 seconds]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method status="PASS" signature="endTest([Ljava.lang.Object;, java.lang.reflect.Method, org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:sample.SampleTestsIT@1810399e]" name="endTest" is-config="true" duration-ms="788" started-at="2018-05-03T23:22:50Z" finished-at="2018-05-03T23:22:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@4b952a2d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void sample.SampleTestsIT.sampleTestWDataProvider(java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@69ea3742]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[TestResult name=sampleTestWDataProvider status=SUCCESS method=SampleTests.sampleTestWDataProvider(java.lang.String)[pri:0, instance:sample.SampleTestsIT@1810399e] output=SUCCESS | FIREFOX | <a target='_blank' href='Demo Selenium Suite/sample_SampleTests_sampleTestWDataProviderWithOptionBashFIREFOX.html'>sample_SampleTests_sampleTestWDataProviderWithOptionBash</a> | 72 seconds]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- sample.SampleTestsIT -->
+    </test> <!-- Demo Selenium Tests -->
+  </suite> <!-- Demo Selenium Suite -->
+</testng-results>

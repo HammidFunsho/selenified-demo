@@ -1,0 +1,193 @@
+<html>
+ <head>
+  <title>sample_SampleTests_sampleTestWDataProviderWithOptionDuck</title>
+  <style type='text/css'>
+   table {
+    margin-left:auto;margin-right:auto;
+    width:90%;
+    border-collapse:collapse;
+   }
+   table, td, th {
+    border:1px solid black;
+    padding:0px 10px;
+   }
+   th {
+    text-align:right;
+   }
+   td {
+    word-wrap: break-word;
+   }
+   .warning {
+    color:orange;
+   }
+   .check {
+    color:orange;
+    font-weight:bold;
+   }
+   .fail {
+    color:red;
+    font-weight:bold;
+   }
+   .pass {
+    color:green;
+    font-weight:bold;
+   }
+  </style>
+  <script type='text/javascript'>
+   function toggleImage( imageName ) {
+    var element = document.getElementById( imageName );
+    element.src = location.href.match(/^.*\//) + imageName;
+    element.style.display = (element.style.display != 'none' ? 'none' : '' );
+   }
+   function displayImage( imageName ) {
+    window.open( location.href.match(/^.*\//) + imageName )
+   }
+   function toggleVis(col_no, do_show) {
+    var stl;
+    if (do_show) stl = ''
+    else         stl = 'none';
+    var tbl  = document.getElementById('all_results');
+    var rows = tbl.getElementsByTagName('tr');
+    var cels = rows[0].getElementsByTagName('th')
+    cels[col_no].style.display=stl;
+    for (var row=1; row<rows.length;row++) {
+     var cels = rows[row].getElementsByTagName('td')
+     cels[col_no].style.display=stl;
+    }
+   }
+   function getElementsByClassName(oElm, strTagName, strClassName){
+    var arrElements = (strTagName == '*' && document.all)? document.all : oElm.getElementsByTagName(strTagName);
+    var arrReturnElements = new Array();
+    strClassName = strClassName.replace(/\-/g, '\\-');
+    var oRegExp = new RegExp('(^|\s)' + strClassName + '(\s|$)');
+    var oElement;
+    for(var i=0; i<arrElements.length; i++){
+     oElement = arrElements[i];
+     if(oRegExp.test(oElement.className)){
+      arrReturnElements.push(oElement);
+     }
+    }
+    return (arrReturnElements)
+   }
+   function fixImages( imageName ) {
+    top.document.title = document.title;
+    allImgIcons = getElementsByClassName( document, 'img', 'imgIcon' );
+    for( var element in allImgIcons ) {
+     element.src = location.href.match(/^.*\//) + element.src;
+    }
+   }
+  </script>
+ </head>
+ <body onLoad='fixImages()'>
+  <table>
+   <tr>
+    <th bgcolor='lightblue'><font size='5'>Test</font></th>
+    <td bgcolor='lightblue' colspan=3><font size='5'>sample_SampleTests_sampleTestWDataProviderWithOptionDuck </font></td>
+   </tr><tr>
+    <th>Tester</th>
+    <td>Automated</td>
+    <th>Version</th>
+    <td>0.0.1</td>
+   </tr><tr>
+    <th>Author</th>
+    <td>Hammid Funsho
+<br/>hammid.funsho@coveros.com</td>
+    <th rowspan='2'>Test Run Time</th>
+    <td rowspan='2'>
+     Start:	23:21:29 <br/>
+     End:	23:22:42 <br/>
+     Run Time:	00:01:12 
+    </td>
+    </tr><tr>
+    <th>Date Tested</th>
+    <td>Thursday, May 3, 2018</td>
+   </tr><tr>
+    <th>URL Under Test</th>
+    <td><a href='https://www.google.com/'>https://www.google.com/</a></td>
+    <th>Browser</th>
+    <td>FIREFOX</td>
+   </tr><tr>
+    <th>Testing Group</th>
+    <td>search</td>
+    <th>Testing Suite</th>
+    <td>Demo Selenium Tests</td>
+   </tr><tr>
+    <th>Test Objectives</th>
+    <td colspan=3>A sample selenium test using a data provider to perform searches</td>
+   </tr><tr>
+    <th>Overall Results</th>
+    <td colspan=3 style='padding: 0px;'>
+     <table style='width: 100%;'><tr>
+      <td font-size='big' rowspan=2><font size='+2' class='pass'><b>PASS</b></font></td>
+      <td><b>Steps Performed</b></td><td><b>Steps Passed</b></td><td><b>Steps Failed</b></td>
+     </tr><tr>
+      <td>6</td><td>6</td><td>0</td>
+     </tr></table>
+    </td>
+   </tr><tr>
+    <th>View Results</th>
+    <td colspan=3>
+     <input type=checkbox name='step' onclick='toggleVis(0,this.checked)' checked>Step
+     <input type=checkbox name='action' onclick='toggleVis(1,this.checked)' checked>Action 
+     <input type=checkbox name='expected' onclick='toggleVis(2,this.checked)' checked>Expected Results 
+     <input type=checkbox name='actual' onclick='toggleVis(3,this.checked)' checked>Actual Results 
+     <input type=checkbox name='times' onclick='toggleVis(4,this.checked)' checked>Step Times 
+     <input type=checkbox name='result' onclick='toggleVis(5,this.checked)' checked>Results
+    </td>
+   </tr>
+  </table>
+  <table id='all_results'>
+   <tr>
+    <th align='center'>Step</th><th style='text-align:center'>Action</th><th style='text-align:center'>Expected Result</th><th style='text-align:center'>Actual Result</th><th style='text-align:center'>Step Times</th><th style='text-align:center'>Pass/Fail</th>
+   </tr>
+   <tr>
+    <td align='center'>1.</td>
+    <td>Opening new browser and loading up starting app</td>
+    <td>The starting app <i>https://www.google.com/</i> will successfully load</td>
+    <td class='success'>The starting app <i>https://www.google.com/</i> loaded successfully</td>
+    <td>15781ms / 15781ms</td>
+    <td class='pass'>Pass</td>
+   </tr>
+   <tr>
+    <td align='center'>2.</td>
+    <td>Typing text 'duck' in  element with <i>NAME</i> of <i>q</i> </td>
+    <td> element with <i>NAME</i> of <i>q</i>  is present, displayed, and enabled to have text duck typed in</td>
+    <td class='success'>Typed text 'duck' in element with <i>NAME</i> of <i>q</i>.</td>
+    <td>2527ms / 18308ms</td>
+    <td class='pass'>Pass</td>
+   </tr>
+   <tr>
+    <td align='center'>3.</td>
+    <td>Submitting  element with <i>NAME</i> of <i>q</i> </td>
+    <td> element with <i>NAME</i> of <i>q</i>  is present, displayed, and enabled to be submitted    </td>
+    <td class='success'>Submitted element with <i>NAME</i> of <i>q</i>.</td>
+    <td>2184ms / 20492ms</td>
+    <td class='pass'>Pass</td>
+   </tr>
+   <tr>
+    <td align='center'>4.</td>
+    <td>Wait 3.0 seconds</td>
+    <td>Waited 3.0 seconds</td>
+    <td class='success'>Waited 3.0 seconds</td>
+    <td>3004ms / 23496ms</td>
+    <td class='pass'>Pass</td>
+   </tr>
+   <tr>
+    <td align='center'>5.</td>
+    <td> </td>
+    <td>Expected to be on page with the title of <i>duck - Google Search</i></td>
+    <td>The page title reads <b>duck - Google Search</b><br/><a href='javascript:void(0)' onclick='toggleImage("1525404113662_kfUJ5tQir0.png")'>Toggle Screenshot Thumbnail</a> <a href='javascript:void(0)' onclick='displayImage("1525404113662_kfUJ5tQir0.png")'>View Screenshot Fullscreen</a><br/><img id='1525404113662_kfUJ5tQir0.png' border='1px' src='1525404113662_kfUJ5tQir0.png' width='300px' style='display:none;'></td>
+    <td>5151ms / 28647ms</td>
+    <td class='pass'>Pass</td>
+   </tr>
+   <tr>
+    <td align='center'>6.</td>
+    <td> </td>
+    <td>Expected not to find text <b>Error</b> present on the page</td>
+    <td>The text <b>Error</b> is not present on the page<br/><a href='javascript:void(0)' onclick='toggleImage("1525404160958_AUn6GmnCD8.png")'>Toggle Screenshot Thumbnail</a> <a href='javascript:void(0)' onclick='displayImage("1525404160958_AUn6GmnCD8.png")'>View Screenshot Fullscreen</a><br/><img id='1525404160958_AUn6GmnCD8.png' border='1px' src='1525404160958_AUn6GmnCD8.png' width='300px' style='display:none;'></td>
+    <td>43576ms / 72223ms</td>
+    <td class='pass'>Pass</td>
+   </tr>
+  </table>
+ </body>
+</html>

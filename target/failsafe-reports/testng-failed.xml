@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="20" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Demo Selenium Suite]" parallel="tests">
+  <test name="Demo Selenium Tests(failed)" parallel="tests">
+    <groups>
+      <run>
+        <include name="services"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="sample.ServicesSampleTestIT">
+        <methods>
+          <include name="endTest"/>
+          <include name="sampleServicesAddressTest"/>
+          <include name="startTest"/>
+          <include name="beforeClass"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- sample.ServicesSampleTestIT -->
+      <class name="sample.SampleServicesPost">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="startTest"/>
+          <include name="endTest"/>
+          <include name="sampleResponseCodePostsTest"/>
+        </methods>
+      </class> <!-- sample.SampleServicesPost -->
+    </classes>
+  </test> <!-- Demo Selenium Tests(failed) -->
+</suite> <!-- Failed suite [Demo Selenium Suite] -->

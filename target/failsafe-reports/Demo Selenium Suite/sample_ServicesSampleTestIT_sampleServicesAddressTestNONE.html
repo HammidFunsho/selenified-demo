@@ -1,0 +1,161 @@
+<html>
+ <head>
+  <title>sample_ServicesSampleTestIT_sampleServicesAddressTest</title>
+  <style type='text/css'>
+   table {
+    margin-left:auto;margin-right:auto;
+    width:90%;
+    border-collapse:collapse;
+   }
+   table, td, th {
+    border:1px solid black;
+    padding:0px 10px;
+   }
+   th {
+    text-align:right;
+   }
+   td {
+    word-wrap: break-word;
+   }
+   .warning {
+    color:orange;
+   }
+   .check {
+    color:orange;
+    font-weight:bold;
+   }
+   .fail {
+    color:red;
+    font-weight:bold;
+   }
+   .pass {
+    color:green;
+    font-weight:bold;
+   }
+  </style>
+  <script type='text/javascript'>
+   function toggleImage( imageName ) {
+    var element = document.getElementById( imageName );
+    element.src = location.href.match(/^.*\//) + imageName;
+    element.style.display = (element.style.display != 'none' ? 'none' : '' );
+   }
+   function displayImage( imageName ) {
+    window.open( location.href.match(/^.*\//) + imageName )
+   }
+   function toggleVis(col_no, do_show) {
+    var stl;
+    if (do_show) stl = ''
+    else         stl = 'none';
+    var tbl  = document.getElementById('all_results');
+    var rows = tbl.getElementsByTagName('tr');
+    var cels = rows[0].getElementsByTagName('th')
+    cels[col_no].style.display=stl;
+    for (var row=1; row<rows.length;row++) {
+     var cels = rows[row].getElementsByTagName('td')
+     cels[col_no].style.display=stl;
+    }
+   }
+   function getElementsByClassName(oElm, strTagName, strClassName){
+    var arrElements = (strTagName == '*' && document.all)? document.all : oElm.getElementsByTagName(strTagName);
+    var arrReturnElements = new Array();
+    strClassName = strClassName.replace(/\-/g, '\\-');
+    var oRegExp = new RegExp('(^|\s)' + strClassName + '(\s|$)');
+    var oElement;
+    for(var i=0; i<arrElements.length; i++){
+     oElement = arrElements[i];
+     if(oRegExp.test(oElement.className)){
+      arrReturnElements.push(oElement);
+     }
+    }
+    return (arrReturnElements)
+   }
+   function fixImages( imageName ) {
+    top.document.title = document.title;
+    allImgIcons = getElementsByClassName( document, 'img', 'imgIcon' );
+    for( var element in allImgIcons ) {
+     element.src = location.href.match(/^.*\//) + element.src;
+    }
+   }
+  </script>
+ </head>
+ <body onLoad='fixImages()'>
+  <table>
+   <tr>
+    <th bgcolor='lightblue'><font size='5'>Test</font></th>
+    <td bgcolor='lightblue' colspan=3><font size='5'>sample_ServicesSampleTestIT_sampleServicesAddressTest </font></td>
+   </tr><tr>
+    <th>Tester</th>
+    <td>Automated</td>
+    <th>Version</th>
+    <td>0.0.1</td>
+   </tr><tr>
+    <th>Author</th>
+    <td>Hammid Funsho
+<br/>hammid.funsho@coveros.com</td>
+    <th rowspan='2'>Test Run Time</th>
+    <td rowspan='2'>
+     Start:	13:04:06 <br/>
+     End:	13:04:06 <br/>
+     Run Time:	00:00:00 
+    </td>
+    </tr><tr>
+    <th>Date Tested</th>
+    <td>Wednesday, July 11, 2018</td>
+   </tr><tr>
+    <th>URL Under Test</th>
+    <td><a href='http://maps.googleapis.com/maps/api/geocode/json'>http://maps.googleapis.com/maps/api/geocode/json</a></td>
+    <th>Browser</th>
+    <td>NONE</td>
+   </tr><tr>
+    <th>Testing Group</th>
+    <td>services</td>
+    <th>Testing Suite</th>
+    <td>Demo Selenium Tests</td>
+   </tr><tr>
+    <th>Test Objectives</th>
+    <td colspan=3>A sample services test to verify the response code</td>
+   </tr><tr>
+    <th>Overall Results</th>
+    <td colspan=3 style='padding: 0px;'>
+     <table style='width: 100%;'><tr>
+      <td font-size='big' rowspan=2><font size='+2' class='fail'><b>FAIL</b></font></td>
+      <td><b>Steps Performed</b></td><td><b>Steps Passed</b></td><td><b>Steps Failed</b></td>
+     </tr><tr>
+      <td>2</td><td>1</td><td>1</td>
+     </tr></table>
+    </td>
+   </tr><tr>
+    <th>View Results</th>
+    <td colspan=3>
+     <input type=checkbox name='step' onclick='toggleVis(0,this.checked)' checked>Step
+     <input type=checkbox name='action' onclick='toggleVis(1,this.checked)' checked>Action 
+     <input type=checkbox name='expected' onclick='toggleVis(2,this.checked)' checked>Expected Results 
+     <input type=checkbox name='actual' onclick='toggleVis(3,this.checked)' checked>Actual Results 
+     <input type=checkbox name='times' onclick='toggleVis(4,this.checked)' checked>Step Times 
+     <input type=checkbox name='result' onclick='toggleVis(5,this.checked)' checked>Results
+    </td>
+   </tr>
+  </table>
+  <table id='all_results'>
+   <tr>
+    <th align='center'>Step</th><th style='text-align:center'>Action</th><th style='text-align:center'>Expected Result</th><th style='text-align:center'>Actual Result</th><th style='text-align:center'>Step Times</th><th style='text-align:center'>Pass/Fail</th>
+   </tr>
+   <tr>
+    <td align='center'>1.</td>
+    <td>Making <i>GET</i> call to <i>http://maps.googleapis.com/maps/api/geocode/json</i><br/>&nbsp;with&nbsp;parameters:&nbsp;<div><i><div>address&nbsp;:&nbsp;123+main+street</div></i></div></td>
+    <td><i>GET</i> call was made successfully</td>
+    <td class='success'><i>GET</i> call was made successfully</td>
+    <td>136ms / 136ms</td>
+    <td class='pass'>Pass</td>
+   </tr>
+   <tr>
+    <td align='center'>2.</td>
+    <td> </td>
+    <td>Expected to find a response containing:<div><i>{<br/>&nbsp;&nbsp;"lat":&nbsp;37.7931177802915,<br/>&nbsp;&nbsp;"lng":&nbsp;-122.3930782197085<br/>}</i></div></td>
+    <td>Found a response of:<div><i>{<br/>&nbsp;&nbsp;"error_message":&nbsp;"You&nbsp;have&nbsp;exceeded&nbsp;your&nbsp;daily&nbsp;request&nbsp;quota&nbsp;for&nbsp;this&nbsp;API.&nbsp;We&nbsp;recommend&nbsp;registering&nbsp;for&nbsp;a&nbsp;key&nbsp;at&nbsp;the&nbsp;Google&nbsp;Developers&nbsp;Console:&nbsp;https://console.developers.google.com/apis/credentials?project\u003d_",<br/>&nbsp;&nbsp;"results":&nbsp;[],<br/>&nbsp;&nbsp;"status":&nbsp;"OVER_QUERY_LIMIT"<br/>}</i></div></td>
+    <td>25ms / 161ms</td>
+    <td class='fail'>Fail</td>
+   </tr>
+  </table>
+ </body>
+</html>
